@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+body{
+  background-color: white;
+}
+
+/*
+
+! VIEW PC 
+
+*/
+
+
+/* Header */
+.headerIndex{
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+  .menu{
+    display: flex;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    height: 150px; 
+}
+    
+ .menu .logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+    }
+
+    .logo img{
+        width: 200px;
+        height: 100px;
+    }
+
+  .logo .tituloLogo{
+        color: white;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+   
+    
+    .menu ul {
+      display: flex;
+      margin-left: auto;
+      list-style: none;
+      text-decoration: none;
+      align-items: center; 
+    }
+    .menu li a {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 600; 
+     
+
+    }
+
+    .menu li a i{
+      padding: 5px;
+      font-size: 17px;
+    }
+
+    .menu ul .reservar{
+       color:#df1a1a ;
+
+    }
+    .menu a:hover {
+      background-color: #df1a1a;
+      border: 1px solid white;
+      padding: 22px 29px;
+      color: white;
+      text-decoration: none; 
+    }
+
+    /* Galeria ligthbox */
+
+
+    .boxTitulo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 40px auto;
+      flex-wrap: wrap;
+    }
+
+    .titleGalery{
+      text-align: center;
+      position: relative;
+      width: 80%;
+     
+      
+    }
+
+    .titleGalery::before{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      background-color: black;
+      top: 50%;
+      z-index: -1;
+    }
+    .titleGalery span{
+      background-color: white;
+      padding: 0 15px;
+    }
+   
+    .boxTitulo .sugerencia{
+      font-size: 18px;
+        color: #ee250a;
+        font-weight: 500;
+    }
+    
+
+    .galeria{
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+      gap: 30px;
+      margin: 100px auto 50px;
+    }
+
+    .galeria img{
+     width: 100%;
+     height: 370px;
+     cursor: pointer;
+     
+      
+    }
+
+    .galeria img:hover{
+      transform: scale(0.9) rotate(-10deg);
+      
+      box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+    }
+
+
+    .full-img{
+      width: 100%;
+      height: 100vh;
+      background: rgb(0, 0, 0, 0.9);
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+    }
+
+    .full-img img{
+      width: 90%;
+      max-width: 650px;
+      
+    }
+
+
+    .full-img span{
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+
+    /*  Footer  */
+
+    .pie-pagina{
+        width: 100%;
+        background-color: black;
+        margin-top: 70px;
+       }
+
+       .grupo1{
+        width: 100%;
+        max-width: 1600px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 190px;
+        padding: 45px 0px;
+       }
+
+       .box figure{
+        width: 100%;
+        height: 100%;
+       }
+
+       .box figure img{
+        width: 250px;
+       }
+
+       .box h2{
+        color: white;
+        margin-bottom: 25px;
+        font-size: 20px;
+       }
+
+       .box p{
+        color: white;
+        margin-bottom: 10px;
+       }
+
+       .redes a{
+        display: inline-block;
+        text-decoration: none;
+        width: 55px;
+        height: 55px;
+        line-height: 45px;
+        color: white;
+        margin-right: 10px;
+        text-align: center;
+        transition: all 300ms ease;
+       }
+       .redes a:hover{
+        color: red;
+        
+       }
+
+       .grupo2{
+        padding: 15px 10px;
+        text-align: center;
+        color: white;
+       }
+       .grupo2 small{
+        font-size: 15px;
+       }
+
+
+
+       /*
+! VIEW MOBILE
+
+*/
+
+
+@media (max-width:950px) {
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+      
+       .menu ul {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.801);
+          display: flex;
+          justify-content: space-around;
+          padding: 10px 0;
+          margin: 0;
+          z-index: 1;
+          height: 90px;
+          transition: opacity 0.5s ease-in-out;
+      }
+  
+      .menu li {
+          margin: 0;
+          flex: 1;
+          text-align: center;
+      }
+  
+      .menu li a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 10px 0;
+          font-size: 0.9rem;
+      }
+
+      .logo{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+      }
+
+      .logo img{
+        
+        width: 150px;
+        height: 80px;
+      }
+      .logo .tituloLogo{
+        
+        font-size: 20px;
+      }
+ 
+
+      /* Footer */
+
+      .pie-pagina{
+        width: 100%;
+        background-color: black;
+        padding-left: 40px;
+
+      }
+
+      .grupo1{
+        width: 100%;
+        padding: 45px 0px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+      }
+
+      .box figure{
+        width: 100%;
+        height: 100%;
+      }
+
+      .box figure img{
+        width: 170px;
+      }
+
+      .box h2{
+        color: white;
+        margin-bottom: 25px;
+        font-size: 20px;
+        
+      }
+
+      .box p{
+        margin-bottom: 10px;
+        color: white;
+      }
+    
+}

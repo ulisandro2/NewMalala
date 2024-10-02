@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+body{
+  background-color: white;
+}
+
+/* ! VIEW PC */
+
+
+/* Header */
+.headerIndex{
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+  .menu{
+    display: flex;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    height: 150px; 
+}
+    
+ .menu .logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+    }
+
+    .logo img{
+        width: 200px;
+        height: 100px;
+    }
+
+  .logo .tituloLogo{
+        color: white;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+   
+    
+    .menu ul {
+      display: flex;
+      margin-left: auto;
+      list-style: none;
+      text-decoration: none;
+      align-items: center; 
+    }
+    .menu li a {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 600; 
+     
+
+    }
+
+    .menu li a i{
+      padding: 5px;
+      font-size: 17px;
+    }
+
+    .menu ul .reservar{
+       color:#df1a1a ;
+
+    }
+    .menu a:hover {
+      background-color: #df1a1a;
+      border: 1px solid white;
+      padding: 22px 29px;
+      color: white;
+      text-decoration: none; 
+    }
+
+
+    /* Seccion info */
+
+    .info-section {
+      padding: 50px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .info-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    
+    .info-header p {
+      font-size: 1.2rem;
+      color: #666;
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
+    
+    /* Estilos para la Sección de Habitaciones */
+    .rooms-section {
+      margin-bottom: 50px;
+    }
+    
+    .rooms-section h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    
+    .room {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    
+    .room img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    
+    .room-info {
+      margin-left: 20px;
+      text-align: left;
+    }
+    
+    .room-info h3 {
+      font-size: 1.5rem;
+      color: #444;
+      margin-bottom: 10px;
+    }
+    
+    .room-info p {
+      font-size: 1rem;
+      color: #666;
+      max-width: 400px;
+    }
+    
+    /* Estilos para la Sección de Servicios */
+    .services-section {
+      margin-top: 50px;
+    }
+    
+    .services-section h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    
+    .service {
+      display: inline-block;
+      margin: 20px;
+      text-align: center;
+    }
+    
+    .service i {
+      font-size: 3rem;
+      color: #df1a1a;
+      margin-bottom: 10px;
+    }
+    
+    .service p {
+      font-size: 1.2rem;
+      color: #444;
+    }
+    
+   
+
+    /*  Footer  */
+
+    .pie-pagina{
+        width: 100%;
+        background-color: black;
+        margin-top: 70px;
+       }
+
+       .grupo1{
+        width: 100%;
+        max-width: 1600px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 190px;
+        padding: 45px 0px;
+       }
+
+       .box figure{
+        width: 100%;
+        height: 100%;
+       }
+
+       .box figure img{
+        width: 250px;
+       }
+
+       .box h2{
+        color: white;
+        margin-bottom: 25px;
+        font-size: 20px;
+       }
+
+       .box p{
+        color: white;
+        margin-bottom: 10px;
+       }
+
+       .redes a{
+        display: inline-block;
+        text-decoration: none;
+        width: 55px;
+        height: 55px;
+        line-height: 45px;
+        color: white;
+        margin-right: 10px;
+        text-align: center;
+        transition: all 300ms ease;
+       }
+       .redes a:hover{
+        color: red;
+        
+       }
+
+       .grupo2{
+        padding: 15px 10px;
+        text-align: center;
+        color: white;
+       }
+       .grupo2 small{
+        font-size: 15px;
+       }
+
+
+/* ! VIEW MOBILE */
+
+
+@media (max-width:950px) {
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+      
+       .menu ul {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.801);
+          display: flex;
+          justify-content: space-around;
+          padding: 10px 0;
+          margin: 0;
+          z-index: 1;
+          height: 90px;
+          transition: opacity 0.5s ease-in-out;
+      }
+  
+      .menu li {
+          margin: 0;
+          flex: 1;
+          text-align: center;
+      }
+  
+      .menu li a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 10px 0;
+          font-size: 0.9rem;
+      }
+
+      .logo{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+      }
+
+      .logo img{
+        
+        width: 150px;
+        height: 80px;
+      }
+      .logo .tituloLogo{
+        
+        font-size: 20px;
+      }
+ 
+
+      /* Footer */
+
+      .pie-pagina{
+        width: 100%;
+        background-color: black;
+        padding-left: 40px;
+
+      }
+
+      .grupo1{
+        width: 100%;
+        padding: 45px 0px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+      }
+
+      .box figure{
+        width: 100%;
+        height: 100%;
+      }
+
+      .box figure img{
+        width: 170px;
+      }
+
+      .box h2{
+        color: white;
+        margin-bottom: 25px;
+        font-size: 20px;
+        
+      }
+
+      .box p{
+        margin-bottom: 10px;
+        color: white;
+      }
+    
+}
+
+@media (max-width: 768px) {
+  .room {
+    flex-direction: column;
+  }
+
+  .room img {
+    margin-bottom: 15px;
+  }
+
+  .room-info {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .service i {
+    font-size: 2.5rem;
+  }
+
+  .service p {
+    font-size: 1rem;
+  }
+}
