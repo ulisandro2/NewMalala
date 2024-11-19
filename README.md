@@ -17,10 +17,10 @@ The project is built with standard web technologies:
 ## Screenshots
 
 <div style="display:flex; flex-direction:row;">
-  <img width="300px" src="https://malalajujuyhostel.com/imagenes/living.jpg" alt="Living Room">
-  <img width="300px" src="https://malalajujuyhostel.com/imagenes/livingCompleto.jpg" alt="Complete Living Room">
-  <img width="300px" src="https://malalajujuyhostel.com/imagenes/ventana.jpg" alt="Window View">
-  <img width="300px" src="https://malalajujuyhostel.com/imagenes/compu.jpg" alt="Computer Area">
+  <img width="300px" src="https://malalajujuyhostel.com/imagenes/11.jpg" alt="Living Room">
+  <img width="300px" src="https://malalajujuyhostel.com/imagenes/6.jpg" alt="Complete Living Room">
+  <img width="300px" src="https://malalajujuyhostel.com/imagenes/3.jpg" alt="Window View">
+  <img width="300px" src="https://malalajujuyhostel.com/imagenes/5.jpg" alt="Computer Area">
   <img width="300px" src="https://malalajujuyhostel.com/imagenes/9.jpg" alt="Room">
 </div>
 
