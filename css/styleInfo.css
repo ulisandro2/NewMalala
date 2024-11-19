@@ -82,10 +82,38 @@ body{
     }
 
 
-    /* Seccion info */
+    /* Seccion info texto */
+
+    .titleInfo{
+      text-align: center;
+      position: relative;
+      width: 80%;
+      margin: 50px auto;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .titleInfo::before{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      background-color: black;
+      top: 50%;
+      z-index: -1;
+     
+    }
+    .titleInfo span{
+      
+      padding: 0 15px;
+    }
 
     .info-section {
-      padding: 50px 20px;
+      padding: 70px 23px;
       background-color: #f9f9f9;
       text-align: center;
       font-family: 'Arial', sans-serif;
@@ -95,6 +123,7 @@ body{
       font-size: 2.5rem;
       margin-bottom: 20px;
       color: #333;
+      font-weight: 600;
     }
     
     .info-header p {
@@ -106,44 +135,77 @@ body{
     
     /* Estilos para la Sección de Habitaciones */
     .rooms-section {
-      margin-bottom: 50px;
+      padding: 50px 20px;
+     text-align: center;
+      font-family: 'Arial', sans-serif;
     }
     
     .rooms-section h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       color: #333;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     
-    .room {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 30px;
+    .rooms-section p {
+      font-size: 1.2rem;
+      color: #666;
+      max-width: 800px;
+      margin: 0 auto 40px;
     }
     
-    .room img {
-      width: 300px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
+   
+    .room-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
     }
     
-    .room-info {
-      margin-left: 20px;
-      text-align: left;
+    .room-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
     }
     
-    .room-info h3 {
+    .room-card:hover {
+      transform: scale(1.03);
+    }
+    
+    .room-card h3 {
       font-size: 1.5rem;
       color: #444;
       margin-bottom: 10px;
     }
     
-    .room-info p {
+    .room-card p {
       font-size: 1rem;
-      color: #666;
-      max-width: 400px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    
+/* Boton de Whatsapp */
+    .whatsapp-button {
+      display: inline-block;
+      margin-top: 50px;
+      padding: 12px 25px;
+      background-color: #25d366;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    
+    .whatsapp-button i {
+      margin-right: 10px;
+      font-size: 1.3rem;
+      vertical-align: middle;
+    }
+    
+    .whatsapp-button:hover {
+      background-color: #1ebe57;
     }
     
     /* Estilos para la Sección de Servicios */
@@ -155,6 +217,7 @@ body{
       font-size: 2rem;
       color: #333;
       margin-bottom: 30px;
+      font-weight: 600;
     }
     
     .service {
@@ -173,7 +236,87 @@ body{
       font-size: 1.2rem;
       color: #444;
     }
+
+    /* Estilos para tarifas */
+
+    .tarifas{
+      padding: 30px;
+    }
+
+    .seccion-tarifas{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 100px;
+    }
+
+    .title-tarifa{
+      margin: 50px auto;
+      font-weight: 600;
+    }
+
+    .toalla h4{
+       font-size: 1.2rem;
+       padding: 5px;  
+    }
+
+    .toalla span{
+      font-size: 1rem;
+      font-weight: 500;
+      color: #df1a1a;
+    }
     
+
+    /* Google maps */
+
+    .direccion {
+      width: 100%;
+      margin-top: 170px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      text-align: center; }
+    
+    .direccion h3 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        color: black;        
+      }
+    .direccion .linea {
+        border-top: 5px solid red;
+        margin-bottom: 40px;
+      }
+    .direccion .capturaMaps img {
+        width: 1000px;
+        height: 800px; 
+      }
+    .direccion .boton{
+        font-size: 1.3rem;
+        padding: 15px 20px;
+        background-color: red;
+        margin-top: 60px;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+        width: 30%;
+        position: relative; 
+      }
+    .direccion a:hover {
+        background-color: #e24747;
+        border: 2px white solid;
+        padding: 13px 18px;
+        color: white;
+        list-style: none; 
+      }
    
 
     /*  Footer  */
@@ -181,7 +324,7 @@ body{
     .pie-pagina{
         width: 100%;
         background-color: black;
-        margin-top: 70px;
+       
        }
 
        .grupo1{
@@ -294,6 +437,24 @@ body{
         
         font-size: 20px;
       }
+
+      /* Tarifas seccion */
+
+      .seccion-tarifas{
+        display: flex;
+        flex-direction: column;
+      }
+
+
+      .direccion .capturaMaps img {
+        width: 500px;
+        height: 500px; 
+      }
+    
+      .direccion .boton{
+        width: 50%;
+      }
+      
  
 
       /* Footer */
@@ -333,6 +494,21 @@ body{
         margin-bottom: 10px;
         color: white;
       }
+
+      /* Servicios basicos */
+
+      .service{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .info-header p{
+         font-size: 1rem;
+      }
+
+      .info-header h1{
+        font-size: 2.4rem;
+     }
     
 }
 
@@ -356,5 +532,14 @@ body{
 
   .service p {
     font-size: 1rem;
+  }
+
+  .direccion .capturaMaps img {
+    width: 300px;
+    height: 300px; 
+  }
+
+  .direccion .boton{
+    width: 80%;
   }
 }

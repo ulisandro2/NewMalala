@@ -75,3 +75,26 @@ const closeFullImg = () => {
     fullImgBox.style.display = "none"
 }
 
+
+
+// Codigo reservar formulario
+
+const enviarAWhatsApp = () => {
+    const nombreCompleto = document.getElementById("DatoNombre").value;
+    const habitacion = document.getElementById("DatoHabitacion").value;
+    const desde = document.getElementById("DatoDesde").value;
+    const hasta = document.getElementById("DatoHasta").value;
+    const cantidadPersonas = document.getElementById("DatoPersonas").value;
+
+    const mensaje = `Hola Malala, ¿qué tal? Mi nombre es ${nombreCompleto}. Me gustaría saber sobre la disponibilidad de la habitación ${habitacion} desde el ${desde} hasta el ${hasta}. Somos ${cantidadPersonas}. ¡Gracias!`;
+
+    const url = `https://wa.me/5493884618914?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, "_blank");
+};
+
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
+    enviarAWhatsApp();
+});
+  
+

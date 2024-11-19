@@ -43,6 +43,7 @@ body{
     .logo img{
         width: 200px;
         height: 100px;
+        
     }
 
   .logo .tituloLogo{
@@ -122,6 +123,26 @@ body{
       color: white;
       list-style: none; 
     }
+
+    /* Boton whatsapp */
+
+    .icono-whatsapp a{
+      position: fixed;
+      z-index: 1;
+      right: 10px;
+      transition: 0.3s;
+      bottom: 90px;
+      }
+  
+      .boton{
+        width: 80px;
+      }
+  
+  
+      .boton:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+      }
 
 
 
@@ -268,10 +289,8 @@ body{
         font-size: 15px;
        }
 
-/*
-! VIEW MOBILE
 
-*/
+/*   ! VIEW MOBILE  */
 
 
       @media (max-width: 950px) {
